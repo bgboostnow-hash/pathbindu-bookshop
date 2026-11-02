@@ -99,8 +99,8 @@ function trackPurchase(total){if(window.fbq&&!window.__PURCHASE_FIRED__){fbq('tr
     </div>
     <div class="order-1 md:order-2">
       <div class="bg-white/5 border border-[#d4af37]/30 rounded-2xl p-3 md:p-5">
-        <img id="mainProductImage" src="images/six-books-combo.jpeg" alt="হুমায়ূন আহমেদের ৬টি বইয়ের মেগা প্যাকেজ" class="w-full h-auto rounded-xl object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-        <div class="ph w-full aspect-[4/3] rounded-xl" style="display:none;">📚 এখানে ৬টি বইয়ের কম্বাইন করা ছবি বসাও<br>(images/six-books-combo.jpeg)</div>
+        <img id="mainProductImage" src="six-books-combo.jpeg" alt="হুমায়ূন আহমেদের ৬টি বইয়ের মেগা প্যাকেজ" class="w-full h-auto rounded-xl object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+        <div class="ph w-full aspect-[4/3] rounded-xl" style="display:none;">📚 এখানে ৬টি বইয়ের কম্বাইন করা ছবি বসাও<br>(six-books-combo.jpeg)</div>
         <p class="text-center text-[#f1d27a] text-sm mt-3 font-semibold">সম্পূর্ণ সেট — ৬টি বই একসাথে</p>
       </div>
     </div>
@@ -297,7 +297,7 @@ function trackPurchase(total){if(window.fbq&&!window.__PURCHASE_FIRED__){fbq('tr
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
     <div>
       <a href="https://www.facebook.com/share/1DzLKmZyTf/" target="_blank" rel="noopener" class="flex items-center gap-2 mb-3 hover:opacity-90 transition">
-  <img src="images/logo.jpeg" alt="পাঠবিন্দু বুকশপ লোগো" class="w-10 h-10 rounded-full object-cover border-2 border-[#d4af37]/50" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+  <img src="logo.jpeg" alt="পাঠবিন্দু বুকশপ লোগো" class="w-10 h-10 rounded-full object-cover border-2 border-[#d4af37]/50" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
   <span class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center text-[#0b2e22] font-extrabold" style="display:none;">প</span>
   <span class="font-bold text-lg text-white">পাঠবিন্দু বুকশপ</span>
 </a>
@@ -326,12 +326,12 @@ function trackPurchase(total){if(window.fbq&&!window.__PURCHASE_FIRED__){fbq('tr
 <script>
 /* ============ BOOKS DATA & RENDER ============ */
 const BOOKS = [
-  { title: "একজন মায়াবতী", img: "images/book1.jpeg", desc: "মায়া, ভালোবাসা ও মানবমনের বিচিত্র অনুভূতির এক মায়াবী গল্প।" },
-  { title: "বৃষ্টি বিলাস", img: "images/book2.jpeg", desc: "বৃষ্টি, প্রেম, অভিমান আর জীবনের অপ্রত্যাশিত মোড়ে সাজানো এক আবেগঘন উপন্যাস।" },
-  { title: "মেঘ বলেছে যাব যাব", img: "images/book3.jpeg", desc: "মানুষের অজানা পথে হারিয়ে যাওয়ার আকাঙ্ক্ষা, স্বপ্ন ও জীবনের নানা অনুভূতির গল্প।" },
-  { title: "তোমাকে", img: "images/book4.jpeg", desc: "ভালোবাসা, আবেগ আর মনের না-বলা কথায় ভরা এক অনুভূতির জগৎ।" },
-  { title: "কোথাও কেউ নেই", img: "images/book5.jpeg", desc: "বাকের ভাই, মুনা আর মানুষের ভালোবাসা, একাকিত্ব ও ন্যায়বিচারের এক হৃদয়স্পর্শী উপাখ্যান।" },
-  { title: "অপেক্ষা", img: "images/book6.jpeg", desc: "অপেক্ষা, ভালোবাসা, পারিবারিক টানাপোড়েন আর জীবনের নানা না-পাওয়ার অনুভূতিতে গড়া এক আবেগঘন উপন্যাস।" }
+  { title: "একজন মায়াবতী", img: "book1.jpeg", desc: "মায়া, ভালোবাসা ও মানবমনের বিচিত্র অনুভূতির এক মায়াবী গল্প।" },
+  { title: "বৃষ্টি বিলাস", img: "book2.jpeg", desc: "বৃষ্টি, প্রেম, অভিমান আর জীবনের অপ্রত্যাশিত মোড়ে সাজানো এক আবেগঘন উপন্যাস।" },
+  { title: "মেঘ বলেছে যাব যাব", img: "book3.jpeg", desc: "মানুষের অজানা পথে হারিয়ে যাওয়ার আকাঙ্ক্ষা, স্বপ্ন ও জীবনের নানা অনুভূতির গল্প।" },
+  { title: "তোমাকে", img: "book4.jpeg", desc: "ভালোবাসা, আবেগ আর মনের না-বলা কথায় ভরা এক অনুভূতির জগৎ।" },
+  { title: "কোথাও কেউ নেই", img: "book5.jpeg", desc: "বাকের ভাই, মুনা আর মানুষের ভালোবাসা, একাকিত্ব ও ন্যায়বিচারের এক হৃদয়স্পর্শী উপাখ্যান।" },
+  { title: "অপেক্ষা", img: "book6.jpeg", desc: "অপেক্ষা, ভালোবাসা, পারিবারিক টানাপোড়েন আর জীবনের নানা না-পাওয়ার অনুভূতিতে গড়া এক আবেগঘন উপন্যাস।" }
 ];
 
 (function renderBooks(){
